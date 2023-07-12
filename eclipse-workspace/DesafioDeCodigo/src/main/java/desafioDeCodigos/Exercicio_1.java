@@ -8,7 +8,7 @@ public class Exercicio_1 {
 	public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);
-		Stack<String> frase = new Stack<String>();
+		Stack<String> frase = new Stack<>();
 	
 		System.out.println("Entre com uma frase: ");
 		for(String palavra:entrada.nextLine().split(" "))
