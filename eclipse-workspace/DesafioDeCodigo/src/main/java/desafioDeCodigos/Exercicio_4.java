@@ -51,7 +51,7 @@ public class Exercicio_4 {
 			}
 		}
 		
-		System.out.println(stringBuffer.toString());
+		System.out.println("\nCom a primeira letra de cada frase em maiúsculo:\n"+stringBuffer.toString());
 		
 		entrada.close();
 			

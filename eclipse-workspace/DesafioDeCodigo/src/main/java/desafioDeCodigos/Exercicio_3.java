@@ -31,7 +31,7 @@ public class Exercicio_3 {
 			}
 		}
 		
-		System.out.println(palindromo);
+		System.out.println("\nA maior subsequencia palindroma é: "+palindromo);
 		
 		entrada.close();
 		

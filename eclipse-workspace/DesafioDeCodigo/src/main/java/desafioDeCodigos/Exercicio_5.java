@@ -56,7 +56,7 @@ public class Exercicio_5 {
 					stringBuffer.append(frase[k]);
 				
 				if(VerificaPalin(stringBuffer.toString())) {
-					System.out.println("True");
+					System.out.println("\nExiste um anagrama palindromo? True");
 					return;
 				}
 					
@@ -65,7 +65,7 @@ public class Exercicio_5 {
 			}	
 		}
 		
-		System.out.println("False");
+		System.out.println("\nExiste um anagrama palindromo? False");
 		
 		entrada.close();
 		
