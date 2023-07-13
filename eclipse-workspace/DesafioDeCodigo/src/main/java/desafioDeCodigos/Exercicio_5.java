@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Exercicio_5 {
 	
+	/* Lógica:																			*
+	 * Percorre a frase embaralhando caracter por caracter e verificando se a frase é 	*
+	 * palindroma (Exercicio 3), se for, é informado que existe um anagrama palindromo	*
+	 * da frase original.																*/
+	
 	private static Scanner entrada;
 
 	public static boolean VerificaPalin(String frase) {
@@ -24,7 +29,6 @@ public class Exercicio_5 {
 				if(controle.equals(stringBuffer.reverse().toString()))
 					palindromo = true;
 				
-				
 				stringBuffer.delete(0, stringBuffer.length());
 			}
 		}
@@ -38,7 +42,7 @@ public class Exercicio_5 {
 		entrada = new Scanner(System.in);
 		StringBuffer stringBuffer = new StringBuffer();
 		
-		System.out.println("Entre com uma frase: ");
+		System.out.println("5 - Verifica se há um anagrama palindromo\n\nEntre com uma frase: ");
 		char[] frase = entrada.nextLine().toCharArray();
 		
 		for(int i=0;i<frase.length;i++) {	
@@ -56,7 +60,6 @@ public class Exercicio_5 {
 					return;
 				}
 					
-				
 				stringBuffer.delete(0, stringBuffer.length());
 				
 			}	

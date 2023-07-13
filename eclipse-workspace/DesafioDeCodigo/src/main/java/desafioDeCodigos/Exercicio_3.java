@@ -6,10 +6,15 @@ public class Exercicio_3 {
 	
 	public static void main(String[] args) {
 		
+		/* Lógica:																		*
+		 * Percorre a frase pro grupos de no mínimo 2 caracteres e no maxímo a frase 	*
+		 * inteira verificando se o grupo é igual a seu inverso, se for, o palindromo 	*
+		 * encontrado é armazenado 														*/
+		
 		Scanner entrada = new Scanner(System.in);
 		StringBuffer stringBuffer = new StringBuffer();
 		
-		System.out.println("Entre com uma frase: ");
+		System.out.println("3 - Verifica se existe uma subsequencia palindroma\n\nEntre com uma frase: ");
 		String frase = entrada.nextLine();
 		String controle, palindromo = "Não há palindromo";
 		
@@ -22,7 +27,6 @@ public class Exercicio_3 {
 				if(controle.equals(stringBuffer.reverse().toString()))
 					palindromo = controle;
 				
-				
 				stringBuffer.delete(0, stringBuffer.length());
 			}
 		}
@@ -32,5 +36,4 @@ public class Exercicio_3 {
 		entrada.close();
 		
 	}
-	
 }
