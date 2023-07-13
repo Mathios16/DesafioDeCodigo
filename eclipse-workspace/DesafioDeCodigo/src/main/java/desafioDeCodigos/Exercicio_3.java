@@ -14,16 +14,17 @@ public class Exercicio_3 {
 		String controle, palindromo = "Não há palindromo";
 		
 		for(int i=1;i<frase.length();i++) {	
-			
-			for(int j=0;j<i;j++) 
-				stringBuffer.append(frase.charAt(j));
-			controle = frase.substring(0, i);
+			for(int j=0;i+j<frase.length();j++) {
+				for(int k=j;k<=i+j;k++)
+					stringBuffer.append(frase.charAt(k));
+				controle = frase.substring(j, i+j+1);
 
-			if(controle.equals(stringBuffer.reverse().toString()))
-				palindromo = controle;
-			
-			
-			stringBuffer.delete(0, stringBuffer.length());
+				if(controle.equals(stringBuffer.reverse().toString()))
+					palindromo = controle;
+				
+				
+				stringBuffer.delete(0, stringBuffer.length());
+			}
 		}
 		
 		System.out.println(palindromo);
