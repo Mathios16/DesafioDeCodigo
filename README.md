@@ -1,5 +1,10 @@
 # DesafioDeCodigo
 
+## Notas
+Os exercícios foram feitos nas seguintes configurações
+* JavaSE-1.7 (jdk-17.0.1)
+* Projeto Maven
+
 ### Exercício 1
 [Código](eclipse-workspace/DesafioDeCodigo/src/main/java/desafioDeCodigos/Exercicio_1.java)<br>
 [Executável](eclipse-workspace/DesafioDeCodigo/Executáveis_Desafio/Executável_Desafio_1.jar)<br>
